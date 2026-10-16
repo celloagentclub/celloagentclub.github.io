@@ -101,7 +101,7 @@ export default function App() {
               </li>
             </ul>
             <div className="about__cta">
-              <a href="/resume.pdf" download className="btn btn--dark">下载 PDF 简历</a>
+              <a href="/resume.pdf" download="李洪宇简历.pdf" className="btn btn--dark">下载 PDF 简历</a>
             </div>
           </div>
         </div>
