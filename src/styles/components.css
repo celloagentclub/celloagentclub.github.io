@@ -4356,3 +4356,84 @@
     gap: 8px;
   }
 }
+
+/* ==========================================================
+   移动端精修（≤640px，iPhone 390 等窄屏）
+   ========================================================== */
+@media (max-width: 640px) {
+  /* 全局：杜绝横向滚动，媒体元素不撑破容器 */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  img,
+  video,
+  svg {
+    max-width: 100%;
+  }
+
+  /* Hero 左下角名字与英文副标防溢出 */
+  .hero__bottom-left {
+    left: 20px;
+    right: 16px;
+    bottom: 28px;
+  }
+  .hero__title {
+    font-size: clamp(40px, 12vw, 56px);
+    word-break: keep-all;
+  }
+  .hero__subtitle {
+    letter-spacing: 0.22em;
+    font-size: 10.5px;
+  }
+
+  /* 视频滑块：宽版两列改单列，竖版铺满容器 */
+  .video-group__clips--wide {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .video-group__clips--p2,
+  .video-group__clips--p3 {
+    max-width: 100%;
+  }
+
+  /* vcar 收窄左右内边距，箭头缩小并贴近卡片 */
+  .vcar {
+    padding: 0 34px;
+    gap: 10px;
+  }
+  .vcar__arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+    top: 44%;
+  }
+  .vcar__card {
+    padding: 18px 16px;
+    gap: 14px;
+  }
+
+  /* 能力要点卡单列 */
+  .entry__cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* about 侧栏信息与时间线节奏（恢复水平留白，避免贴边） */
+  .about-grid {
+    padding: clamp(32px, 7vw, 48px) var(--gutter);
+  }
+  .about__name {
+    font-size: clamp(32px, 9vw, 44px);
+  }
+  .about__role {
+    margin-bottom: 28px;
+  }
+  .about__tdesc {
+    font-size: 14px;
+  }
+
+  /* 技能 bento 卡片内边距收紧 */
+  .bento-card {
+    padding: 20px 18px;
+  }
+}

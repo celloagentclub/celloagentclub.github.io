@@ -78,12 +78,6 @@ export default function App() {
                   <a href="mailto:864901440@qq.com">864901440@qq.com</a>
                 </span>
               </li>
-              <li>
-                <span className="about__num">03</span>
-                <span className="about__label">Academic</span>
-                <span className="about__value">中南林业科技大学 · 工业设计</span>
-                <span className="about__sub">2020 — 2024</span>
-              </li>
             </ul>
           </div>
           <div className="about__body">
