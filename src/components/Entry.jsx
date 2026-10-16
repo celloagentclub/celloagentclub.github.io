@@ -127,7 +127,7 @@ export default function Entry({ entry, t, onOpen }) {
           </div>
           {isWork ? (
             <div className="projects-cta">
-              <a href="/assets/jootle-brand-strategy.pdf" target="_blank" rel="noopener noreferrer" className="projects-cta__link">
+              <a href="/assets/jootle-brand-incubation-strategy.pdf" target="_blank" rel="noopener noreferrer" className="projects-cta__link">
                 查看 Jootle 品牌策划全案 →
               </a>
             </div>
