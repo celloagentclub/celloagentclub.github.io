@@ -1,0 +1,34 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#E9E1D5"/>
+  <!-- 货船/集装箱抽象 -->
+  <g stroke="#141413" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 波浪线（海面） -->
+    <path d="M100 380 Q150 360 200 380 T300 380 T400 380 T500 380 T600 380 T700 380" stroke-width="2.5"/>
+    <!-- 船身 -->
+    <path d="M200 320 L200 350 L380 350 L360 320 Z" />
+    <!-- 集装箱堆叠 -->
+    <rect x="220" y="280" width="50" height="35" />
+    <rect x="275" y="280" width="50" height="35" />
+    <rect x="220" y="245" width="50" height="35" />
+    <rect x="275" y="245" width="50" height="35" fill="#D97757" stroke="#D97757"/>
+    <!-- 驾驶舱 -->
+    <rect x="330" y="290" width="40" height="30" />
+    <!-- 桅杆 -->
+    <line x1="350" y1="290" x2="350" y2="250" />
+  </g>
+  <!-- 数据看板抽象（右侧） -->
+  <g stroke="#141413" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <rect x="500" y="150" width="200" height="180" rx="8" />
+    <!-- 柱状图 -->
+    <line x1="530" y1="300" x2="670" y2="300" stroke-width="2"/>
+    <rect x="540" y="260" width="18" height="40" fill="#141413"/>
+    <rect x="570" y="230" width="18" height="70" fill="#141413"/>
+    <rect x="600" y="250" width="18" height="50" fill="#D97757" stroke="#D97757"/>
+    <rect x="630" y="210" width="18" height="90" fill="#141413"/>
+    <!-- 小圆点 -->
+    <circle cx="530" cy="170" r="5" fill="#D97757"/>
+    <circle cx="550" cy="170" r="5" fill="#141413"/>
+  </g>
+  <!-- 连线：船 → 看板 -->
+  <path d="M380 300 Q440 250 500 240" stroke="#141413" stroke-width="2" stroke-dasharray="6,6" fill="none"/>
+</svg>

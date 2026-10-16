@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F0EDEB"/>
+  <!-- 抽象笔身：几根竖线，深色手绘风 -->
+  <line x1="100" y1="80" x2="100" y2="220" stroke="#141413" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="140" y1="70" x2="140" y2="220" stroke="#141413" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="180" y1="90" x2="180" y2="220" stroke="#141413" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="220" y1="65" x2="220" y2="220" stroke="#141413" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="260" y1="85" x2="260" y2="220" stroke="#141413" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 笔尖：小三角，陶土色点缀 -->
+  <path d="M100 220 L95 240 L105 240 Z" fill="#D97757"/>
+  <path d="M140 220 L135 240 L145 240 Z" fill="#141413"/>
+  <path d="M180 220 L175 240 L185 240 Z" fill="#141413"/>
+  <path d="M220 220 L215 240 L225 240 Z" fill="#D97757"/>
+  <path d="M260 220 L255 240 L265 240 Z" fill="#141413"/>
+  <!-- 装饰曲线 -->
+  <path d="M60 50 Q200 30 340 60" stroke="#141413" stroke-width="1" fill="none" opacity="0.3" stroke-linecap="round"/>
+</svg>

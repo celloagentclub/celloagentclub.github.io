@@ -1,0 +1,138 @@
+/* ------------------------------------------------------------------
+   Design tokens — Claude / Anthropic 官方规范
+   奶油纸张地表 + 陶土橙 + 水彩三系(Cactus/Heather/Peach) + 0.5px 发丝线
+   减速缓动曲线: cubic-bezier(.23, 1, .32, 1) Quintic
+------------------------------------------------------------------ */
+
+:root {
+  color-scheme: light;
+
+  /* 品牌核心色 (Claude Terracotta / Coral) */
+  --clay: #d97757;
+  --clay-deep: #bc5b3c;
+  --clay-tint: rgba(217, 119, 87, 0.08);
+  --clay-ring: rgba(217, 119, 87, 0.28);
+  --clay-glow: rgba(217, 119, 87, 0.14);
+
+  /* Claude 官方标志性水彩辅色系 (Cactus / Heather / Peach) */
+  --swatch-cactus: #bcd1ca;
+  --swatch-cactus-deep: #629987;
+  --swatch-cactus-tint: rgba(188, 209, 202, 0.22);
+  --swatch-cactus-border: rgba(98, 153, 135, 0.28);
+
+  --swatch-heather: #cbcadb;
+  --swatch-heather-deep: #827dbd;
+  --swatch-heather-tint: rgba(203, 202, 219, 0.22);
+  --swatch-heather-border: rgba(130, 125, 189, 0.28);
+
+  --swatch-peach: #ebc9b7;
+  --swatch-peach-deep: #c46849;
+  --swatch-peach-tint: rgba(235, 201, 183, 0.22);
+  --swatch-peach-border: rgba(196, 104, 73, 0.28);
+
+  /* Claude 官方地表与纸张阶梯体系 */
+  --ground: #faf9f5;          /* 标志性最纯净未涂布纸地表 */
+  --cream: #f0eee6;           /* 经典温暖主干纸底 */
+  --ground-tertiary: #f5f4ed; /* 次级卡片衬底 */
+  --paper: #fbf9f4;           /* 极浅卡片纸面 */
+  --paper-2: #f4f0e6;         /* 灰调纸面 */
+
+  /* 官方墨色阶梯 */
+  --ink: #141413;             /* 官方浓墨黑 */
+  --ink-2: #383734;           /* 正文深灰墨 */
+  --ink-3: #65635d;           /* 辅助说明灰墨 */
+  --ink-4: #8e8b83;           /* 弱化微标墨 */
+
+  /* 官方极轻发丝线与微边框 (0.5px / 0.08) */
+  --line: rgba(20, 20, 19, 0.085);
+  --line-2: rgba(20, 20, 19, 0.16);
+  --veil: rgba(20, 20, 19, 0.5);
+  --specular: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95);
+
+  /* 克制轻微阴影 */
+  --shadow-sm: 0 1px 2px rgba(20, 20, 19, 0.035);
+  --shadow-md: 0 2px 8px -2px rgba(20, 20, 19, 0.06), 0 8px 24px -6px rgba(20, 20, 19, 0.08);
+  --shadow-lg: 0 16px 48px -12px rgba(20, 20, 19, 0.14);
+
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* 经典装饰面板色 */
+  --panel-sage: #dae3db;
+  --panel-sage-line: #b9c8bd;
+  --panel-cream: #e7e2d6;
+  --panel-cream-line: #d5cebd;
+  --panel-dark: #1b1a18;
+  --panel-dark-line: rgba(240, 238, 230, 0.12);
+
+  --font-serif: "Newsreader", "Noto Serif SC", "Songti SC", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Microsoft YaHei",
+    system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+
+  --wrap: 1140px;
+  --gutter: 40px;
+  --nav-h: 68px;
+
+  /* Claude 官方标志性五次贝塞尔缓动 (Quintic ease-out) */
+  --ease: cubic-bezier(.23, 1, .32, 1);
+  --ease-soft: cubic-bezier(.215, .61, .355, 1);
+  --ease-travel: cubic-bezier(.77, 0, .175, 1);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --clay: #e08a6b;
+  --clay-deep: #f09f83;
+  --clay-tint: rgba(224, 138, 107, 0.12);
+  --clay-ring: rgba(224, 138, 107, 0.35);
+  --clay-glow: rgba(224, 138, 107, 0.2);
+
+  --swatch-cactus: #629987;
+  --swatch-cactus-deep: #bcd1ca;
+  --swatch-cactus-tint: rgba(98, 153, 135, 0.2);
+  --swatch-cactus-border: rgba(188, 209, 202, 0.22);
+
+  --swatch-heather: #827dbd;
+  --swatch-heather-deep: #cbcadb;
+  --swatch-heather-tint: rgba(130, 125, 189, 0.2);
+  --swatch-heather-border: rgba(203, 202, 219, 0.22);
+
+  --swatch-peach: #c46849;
+  --swatch-peach-deep: #ebc9b7;
+  --swatch-peach-tint: rgba(196, 104, 73, 0.2);
+  --swatch-peach-border: rgba(235, 201, 183, 0.22);
+
+  --ground: #0e0e0d;
+  --cream: #141413;
+  --ground-tertiary: #191817;
+  --paper: #1b1a18;
+  --paper-2: #22211e;
+  --ink: #f2f0e9;
+  --ink-2: #d6d3c8;
+  --ink-3: #a4a198;
+  --ink-4: #75736d;
+  --line: rgba(242, 240, 233, 0.1);
+  --line-2: rgba(242, 240, 233, 0.2);
+  --veil: rgba(0, 0, 0, 0.68);
+  --specular: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.15);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 60px -20px rgba(0, 0, 0, 0.8);
+
+  --panel-sage: #1e2521;
+  --panel-sage-line: #303a33;
+  --panel-cream: #221f1b;
+  --panel-cream-line: #322c25;
+}
+
+@media (max-width: 860px) {
+  :root {
+    --gutter: 22px;
+    --nav-h: 60px;
+  }
+}

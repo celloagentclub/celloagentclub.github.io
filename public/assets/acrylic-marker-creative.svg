@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F0EDEB"/>
+  <!-- 陶土色色块（画布） -->
+  <rect x="130" y="100" width="140" height="100" rx="4" fill="#EBC9B7"/>
+  <!-- 画架线条 -->
+  <line x1="200" y1="90" x2="200" y2="100" stroke="#141413" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="160" y1="200" x2="140" y2="250" stroke="#141413" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="240" y1="200" x2="260" y2="250" stroke="#141413" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 画布上的抽象曲线 -->
+  <path d="M160 150 Q180 120 200 150 T240 150" stroke="#141413" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="155" r="15" stroke="#141413" stroke-width="2.5" fill="none"/>
+</svg>
