@@ -7,7 +7,7 @@ export default function SectionHead({ label, title }) {
         <ClaudeSparkle className="section-head__sparkle" />
         {label}
       </p>
-      <h2 className="section-head__title">{title}</h2>
+      {title ? <h2 className="section-head__title">{title}</h2> : null}
       <div className="section-head__rule" aria-hidden="true" />
     </div>
   )

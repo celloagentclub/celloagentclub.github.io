@@ -136,7 +136,7 @@ export default function App() {
           id="ai"
         >
           <div className="wrap stack">
-            <SectionHead label={t.ai.label} title={t.ai.title} />
+            <SectionHead label={t.ai.label} />
             {t.ai.lede ? (
               <p className="section-lede">
                 <RichText text={t.ai.lede} />
